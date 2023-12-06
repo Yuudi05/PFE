@@ -1,0 +1,275 @@
+
+
+.ed-navbar {
+	background-color: rgba(0, 0, 0, 0.5);
+	box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.54);
+	z-index: 3;
+}
+.ed-navbar .nav-link{
+	border-bottom: 1px solid transparent;
+	transition: padding-bottom .4s ease-in-out, border-color .3s ease;
+
+}
+.ed-navbar .nav-link:hover {
+	padding-bottom: 20px;
+	border-bottom-color: #1A4880;
+}
+#user{
+	text-decoration: none;
+    color: inherit;
+   
+}
+
+
+
+.bg-pic{
+	background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../img/bg.jpg") center center fixed no-repeat;
+	background-size: cover;
+	height: 700px;
+
+}
+
+
+section h3{
+	text-align: center;
+	padding-bottom: 20px;
+}
+div .card-group{
+	height: 300px;
+	width: 370px;
+	margin: auto;
+}
+
+#anno_pic{
+	position: relative;
+	 width:100%;
+	 height:247px;
+	 object-fit: cover;
+	 object-position: center center;
+}
+.swiper{
+	height: 350px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover{
+	color: rgba(38, 51, 146, 1);
+	transition: 0.5s ease;
+	
+}
+.annonce {
+  margin-top: -200px;
+  width: 100%;
+}
+.annonce .card{
+  background-image: url('../img/lol.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 20px;
+  text-align: center;
+  object-fit: fill;
+  color: #fff;
+  padding: 40px;
+}
+
+
+#img-eve{
+	
+	height: 400px;
+	width: 400px;
+	object-fit: cover;
+	object-position: center center;
+
+}
+
+li .btn-connect {
+	border: 1px solid #1A4880 ;
+	color : #7EB7FD;
+	background: none;
+	transition: 0.8s;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+li .btn-connect:hover{
+	color: #fff;
+}
+
+li .btn::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	background: #1A4880;
+	z-index: -1;
+	transition: 1.2s;
+	bottom: 0;
+	border-radius: 50% 50% 0 0;
+}
+li .btn-connect::before{
+	
+	
+}
+li .btn-connect:hover::before{
+	
+	height: 180px;
+}
+
+.slider{
+	height: 480px;
+	margin: auto;
+	position: relative;
+	width: 90%;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+}
+.slide-track{
+	display: flex;
+	width: calc(350px * 8);
+	animation: scroll 40s linear infinite;
+}
+.slide-track:hover{
+	animation-play-state: paused;
+}
+@keyframes scroll{
+	0% {
+		transform: translateX(0);
+	}
+	100%{
+		transform: translateX(calc(-250px * 4));
+	}
+}
+.slide{
+	height: 200px;
+	width: 250px;
+	display: flex;
+	align-items: center;
+	padding: 15px;
+	perspective: 100px;
+}
+.card-eve{
+	width: 100%;
+	transition: 1s;
+}
+.card-eve:hover{
+	transform: translateZ(20px);
+}
+.slider::before,
+.slider::after{
+	background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+	content: '';
+	height: 100%;
+	position: absolute;
+	width: 15%;
+	z-index: 2;
+}
+.slider::before{
+	left: 0;
+	top: 0;
+}
+.slider::after{
+	right: 0;
+	top: 0;
+	transform:  rotateZ(180deg);
+}
+
+
+section.contact-us {
+ background-image: url(../img/lol.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 140px 0px 0px 0px;
+}
+
+section.contact-us #contact {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+section.contact-us #contact h2 {
+  text-transform: uppercase;
+  color: #1f272b;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+section.contact-us #contact input {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #f7f7f7;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: #7a7a7a;
+  padding: 0px 15px;
+  margin-bottom: 30px;
+}
+
+section.contact-us #contact textarea {
+  width: 100%;
+  min-height: 140px;
+  max-height: 180px;
+  border-radius: 20px;
+  background-color: #f7f7f7;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: #7a7a7a;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+section.contact-us #contact button {
+  font-size: 13px;
+  color: #fff;
+  background-color:  #1A4880;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all .3s;
+  border: none;
+  outline: none;
+}
+
+section.contact-us #contact button:hover {
+  opacity: 0.9;
+}
+
+footer{
+	background-color: #101238;
+}
+section div ul{
+	list-style: none;
+
+}
+section div ul .fab{
+	
+	margin : 10px 10px 10px 10px;
+	color: #fff;
+}
+#contact-h6{
+	margin-left: 32px;
+}
+
+.testtt{
+	background-color: #101238;
+	transition: 0.6s ease;
+	z-index: 3;
+}
+
